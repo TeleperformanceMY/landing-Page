@@ -1,0 +1,545 @@
+@import url('https://fonts.cdnfonts.com/css/handwriting');
+@import url('https://fonts.cdnfonts.com/css/kg-first-time-in-forever');
+@import url('https://fonts.cdnfonts.com/css/lumie');
+@import url('https://fonts.cdnfonts.com/css/simple-and-minimalis');
+
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('your_background_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: auto; /* Make the body relative for positioning the copyright */
+}
+
+/* Video container styles */
+.video-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+/* Header styles */
+.header {
+    background-color: rgba(0, 0, 0, 0.5); /* Change to semi-transparent black */
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80px; /* Reduce the size of the logo for smaller screens */
+
+}
+
+.company-description {
+    font-family: 'KG First Time In Forever', sans-serif;
+
+    font-size: 40px;
+    color: #EEE0EC; /* Change text color to more colorful */
+    text-align: center; /* Move text to the center */
+    margin-left: auto; /* Move text to the right */
+    margin-right: 225px; /* Increase r
+}
+
+.company-description b {
+    font-weight: bold; /* Make text bold */
+}
+
+.company-description .highlight {
+    font-family: 'Lumie', sans-serif;
+
+    font-size: 48px; /* Increase font size for "The One" */
+    font-weight: bold; /* Make text bold */
+    color: rgba(204, 0, 79, 0.8);; /* Change color to neon pink */
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+
+   
+   
+    0 0 151px #bc13fe; /* Neon glow effect */
+}
+.empty {
+    position: fixed;
+    bottom: 0;
+    margin-top: 2px;
+    height: 50px;
+ 
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin-top: 2px;
+    height: fit-content;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 999; /* Ensure it's above other content */
+    padding: 10px 0; /* Reduce padding for smaller screens */
+    line-height: 1.6;
+}
+
+.footer .container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;/* Center align text */
+}
+
+.button-container {
+    margin-bottom: 10px; /* Add some space between buttons and copyright */
+}
+.button {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(204, 0, 79, 0.8); /* Change hover color to the same as font */
+    color: #0a0a0a; /* White text color on hover */
+}
+/*24 hour*/
+.except{
+    font-family: 'KG First Time In Forever', sans-serif;
+
+    font-size: 40px;
+    color: #EEE0EC; /* Change text color to more colorful */
+    text-align: center; /* Move text to the center */
+    margin-left: auto; /* Move text to the right */
+    margin-right: 200px; /* Increase r*/
+}
+.except .highlight{
+    font-family: 'Lumie', sans-serif;
+
+    font-size: 48px; /* Increase font size for "The One" */
+    font-weight: bold; /* Make text bold */
+    color: rgba(204, 0, 79, 0.8);; /* Change color to neon pink */
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+
+   
+   
+    0 0 151px #bc13fe; /* Neon glow effect */
+}
+/* Copyright styles */
+/* Copyright styles */
+.copyright {
+    color: #fff;
+ 
+    font-size: 14px;
+}
+
+
+
+
+  .hover-4 {
+    border: 8px solid;
+    border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
+    -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+      conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .2s, -webkit-mask-position .3s .3s;
+    position: fixed;
+    top: 65%;
+    left: 10%;
+    transform: translate(-40%, -50%)rotate(350deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size:xx-large;
+  }
+  
+  .hover-4:hover {
+    --_i: 100%;
+    color: rgba(204, 0, 79, 0.8);
+    transition: .3s, -webkit-mask-size .3s .3s;
+  }
+  
+.inverted-2 {
+    padding: 10px;
+    background:
+      conic-gradient(from 135deg at top   ,rgba(204, 0, 79, 0.8) 90deg,#000 0)  ,
+      conic-gradient(from -45deg at bottom,rgba(204, 0, 79, 0.8) 90deg,#000 0)  ,
+      conic-gradient(from 135deg at top   ,rgba(204, 0, 79, 0.8) 90deg,#0000 0),
+      conic-gradient(from -45deg at bottom,rgba(204, 0, 79, 0.8) 90deg,#0000 0),
+      #000;
+    -webkit-background-clip: text,text,padding-box,padding-box,text;
+            background-clip: text,text,padding-box,padding-box,text;
+    background-size: 100% 50%;
+    background-position: 50% -100%,50% 200%;
+    background-repeat: repeat-x;
+    transition: 0.4s linear,background-position 0.3s 0.5s;
+    position: fixed;
+    top: 65%;
+    right:  5%;
+    transform: translate(-50%,-50%)rotate(30deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size:xx-large;
+  }
+  .inverted-2:hover {
+    background-position: 50% 0,50% 100%;
+    background-size: 10% 50%;
+    transition: 0.3s,background-size 0.4s 0.3s linear;
+  }
+  .inverted-3 {
+    padding: 0 10px;
+    line-height: 1em;
+    background:
+      linear-gradient(#fff 0 0),
+      linear-gradient(rgba(204, 0, 79, 0.8) 0 0),
+      #000;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+            background-size: 100% 50%;
+            background-position: 50% -100%,50% 200%;
+            background-repeat: no-repeat;
+            transition: 0.4s linear,background-position 0.3s 0.5s;
+            position: fixed;
+            top: 65%;
+            right:  5%;
+            transform: translate(-50%,-50%)rotate(30deg);
+            font-family: 'Your Handwritten Font', cursive;
+            font-size:xx-large;
+  }
+  .inverted-3:hover {
+    background-position: 0 100%;
+    box-shadow: 0 0.5em 0 0 #000;
+  }
+  .inverted-4 {
+    padding: 0 10px;
+    line-height: 1.4em;
+    background:
+      linear-gradient(#fff 0 0),
+      linear-gradient(rgba(204, 0, 79, 0.8) 0 0),
+      #000;
+    -webkit-background-clip:text,padding-box;
+    background-clip:text,padding-box;
+    
+    clip-path: polygon(-100vmax 0,100% 0,100% calc(100% + 0.7em),-100vmax calc(100% + 0.7em));
+    transition: 0.4s, box-shadow 0.3s 0.4s,background-position 0.3s 0.4s;
+    background-size: 100% 50%;
+    background-position: 50% -100%,50% 200%;
+    background-repeat: repeat-x;
+    position: fixed;
+    top: 30%;
+    right:  5%;
+    transform: translate(-50%,-50%)rotate(30deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size:xx-large;
+  }
+  .inverted-4:hover {
+    background-position: 0 100%;
+    background-size: 100% 100%;
+    box-shadow: 0 0.7em 0 0 #000;
+    clip-path: polygon(-100vmax 0,100% 0,100% 100%,-100vmax 100%);
+    transition: 0.4s, clip-path 0.3s 0.4s,background-size 0.3s 0.4s;
+  }
+  
+  .inverted-5 {
+    padding: 10px;
+    background:
+      radial-gradient(100% 100% at top left,#fff 98%,#000) ,
+      radial-gradient(100% 100% at bottom right,#fff 98%,#000) ,
+      radial-gradient(100% 100% at top left,#000 98%,#0000) ,
+      radial-gradient(100% 100% at bottom right,#000 98%,#0000) ,
+      #000;
+    -webkit-background-clip: text,text,padding-box,padding-box,text;
+            background-clip: text,text,padding-box,padding-box,text;
+    background-size: 0% 0%;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+
+    position: fixed;
+    top: 40%;
+    right:  5%;
+    transform: translate(-25%,-25%)rotate(-30deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size:xx-large;
+  }
+  .inverted-5:hover {
+    background-size: 50% 100%;
+  }
+  
+  
+  .inverted-6 {
+    background:
+      conic-gradient(            #fff 0 90deg, #fff0 0) bottom left,
+      conic-gradient(            rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) bottom left,
+      conic-gradient(from  90deg,#fff 0 90deg, #fff0 0) top left,
+      conic-gradient(from  90deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) top left,
+      conic-gradient(from 180deg,#fff 0 90deg, #fff0 0) top right,
+      conic-gradient(from 180deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) top right,
+      conic-gradient(from -90deg,#fff 0 90deg, #fff0 0) bottom right,
+      conic-gradient(from -90deg, rgba(204, 0, 79, 0.8) 0 90deg, #fff0 0) bottom right,
+      #000;
+    -webkit-background-clip:text,padding-box;
+            background-clip:text,padding-box;
+    background-size: 202% 202%;
+    transition: 0.5s;
+     background-position: top;
+    background-repeat: repeat-x;
+      position: fixed;
+    top: 25%;
+    left:  25%;
+    transform: translate(-50%,-50%)rotate(30deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size:xx-large;
+  }
+   
+  .inverted-6:hover {  
+    background-position: center;
+    color: rgba(204, 0, 79, 0.8);
+   }
+    
+  
+  .inverted-7{
+    background:
+      radial-gradient(circle 30px at 50% 75%, #fff 95%, #000),
+      radial-gradient(circle 30px at 50% 75%, #000 95%, #0000),
+      #000;
+    -webkit-background-clip: text,padding-box,text;
+            background-clip: text,padding-box,text;
+    background-size: 100% 200%;
+    background-position: top;
+    background-repeat: repeat-x;
+    transition: 0.3s,background-position 0.3s 0.3s;
+     position: fixed;
+    top: 65%;
+    right:  5%;
+    transform: translate(-50%,-50%)rotate(30deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size:xx-large;
+  }
+  .inverted-7:hover {  
+    background-size: 15% 200%;
+    background-position: bottom;
+
+    transition: 0.3s,background-size 0.3s 0.3s;
+    box-shadow: 0 0.5em 0 0 #fff;
+    color: rgba(204, 0, 79, 0.8);
+   }
+   .inverted-8 {
+    background:
+      linear-gradient( 90deg, #000  50%, #fff 0),
+      linear-gradient(-90deg, #000  50%, #fff 0),
+      linear-gradient( 90deg, #0000 50%, #000 0),
+      linear-gradient(-90deg, #0000 50%, #000 0);
+    background-repeat: no-repeat;
+    background-size: 200% 51%;
+    background-position: top left, bottom right;
+    -webkit-background-clip: text, text, padding-box, padding-box;
+            background-clip: text, text, padding-box, padding-box;
+    transition: 0.8s;
+    position : fixed;
+    top: 65%;
+    right:  5%;
+    transform: translate(-50%,-50%)rotate(30deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size:xx-large;
+  }
+  
+  .inverted-8:hover {
+    
+  --c: #1095c1; /* the color */
+  --s: .15em;
+  
+  line-height:1.1em;
+  padding-bottom: calc(2.1*var(--s));
+  background: 
+    conic-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
+      left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+    conic-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+      left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
+  transition: .5s;
+  
+  --_p: 100%;
+  color: var(--c);
+  }
+
+  .d-1 {
+    --c: #1095c1; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 20px;    /* the cube depth */
+    
+    --_s: calc(var(--d) + var(--b));
+    
+    color: var(--c);
+    border: solid #0000;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+      conic-gradient(at left var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at left var(--_s) bottom var(--_s),
+        #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--d)/-1),var(--d));
+    clip-path: 
+      polygon(
+       var(--d) 0%, 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)),
+       100% calc(100% - var(--d)),
+       var(--d) calc(100% - var(--d))
+      );
+    transition: 0.5s;
+
+    background-size: 100% 50%;
+    background-position: 50% -100%,50% 200%;
+    background-repeat: repeat-x;
+     position: fixed;
+    top: 50%;
+left:15%;
+    transform: translate(-50%,-50%)rotate(-45deg);
+    font-family: 'Your Handwritten Font', cursive;
+    font-size:xx-large;
+  }
+  .d-1:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+       0% var(--d), 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)), 
+       calc(100% - var(--d)) 100%, 
+       0% 100%
+     );
+     background-size: 15% 200%;
+     background-position: bottom;
+     transition: 0.3s,background-size 0.3s 0.3s;
+  }/* Responsive styles for phones */
+  @media only screen and (max-width: 600px) {
+
+    /* Header styles */
+    .header {
+        position: fixed; /* Fix the header position */
+        top: 0; /* Position the header at the top */
+        width: 100%; /* Ensure full width */
+        z-index: 2; /* Ensure the header is above the video */
+        transition: top 0.3s; /* Add smooth transition for the header */
+    }
+
+    /* Footer styles */
+    .footer {
+        position: fixed; /* Fix the footer position */
+        bottom: 0; /* Position the footer at the bottom */
+        width: 100%; /* Ensure full width */
+        z-index: 2; /* Ensure the footer is above the video */
+        transition: bottom 0.3s; /* Add smooth transition for the footer */
+    }
+
+    /* Show header on scroll */
+    .show-header .header {
+        top: -100px; /* Move header out of view */
+    }
+
+    /* Show footer on scroll */
+    .show-footer .footer {
+        bottom: -100px; /* Move footer out of view */
+    }
+
+    /* Video container styles */
+    .video-container {
+        margin-top: 60px; /* Adjust to push content below the header */
+        margin-bottom: 60px; /* Adjust to push content above the footer */
+        z-index: 1; /* Ensure the video is below the header and above the footer */
+        overflow-y: auto; /* Enable vertical scrolling for the video container */
+        position: relative; /* Ensure the container is positioned relatively */
+        height: calc(100vh - 120px); /* Calculate height to fit between header and footer */
+    }
+
+    .video-container video {
+        width: 100%; /* Ensure full width */
+        height: auto; /* Allow the height to adjust automatically */
+        border: 1px solid #ccc; /* Add border to the video */
+        border-radius: 5px; /* Add border radius for a rounded appearance */
+    }
+
+    /* Additional inverted styles */
+    .hover-4,
+    .inverted-2,
+    .inverted-3,
+    .inverted-4,
+    .inverted-5,
+    .inverted-6,
+    .inverted-7,
+    .inverted-8,
+    .d-1 {
+        top: 50%; /* Adjust top position for smaller screens */
+        right: 10%; /* Adjust right position for smaller screens */
+        transform: translate(-50%, -50%) rotate(30deg); /* Adjust transform for smaller screens */
+        font-size: small; /* Make the font size smaller */
+        overflow: hidden; /* Hide overflowing text */
+    }
+
+    /* Responsive styles for text */
+    .company-description {
+        font-size: 16px; /* Reduce font size for smaller screens */
+        text-align: center; /* Center align the company description */
+        font-family: 'KG First Time In Forever', sans-serif;
+        max-width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .company-description .highlight {
+        font-family: 'Lumie', sans-serif;
+        font-size: 30px; /* Decrease font size for "The One" on smaller screens */
+    }
+
+    /* Responsive styles for footer */
+    .footer .container {
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    .button {
+        padding: 6px 10px; /* Reduce button padding for smaller screens */
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
+
+    .copyright {
+        font-size: 10px; /* Reduce font size for smaller screens */
+    }
+}
+
