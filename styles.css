@@ -451,95 +451,114 @@ left:15%;
      background-position: bottom;
      transition: 0.3s,background-size 0.3s 0.3s;
   }/* Responsive styles for phones */
-  @media only screen and (max-width: 600px) {
-
-    /* Header styles */
-    .header {
-        position: fixed; /* Fix the header position */
-        top: 0; /* Position the header at the top */
-        width: 100%; /* Ensure full width */
-        z-index: 2; /* Ensure the header is above the video */
-        transition: top 0.3s; /* Add smooth transition for the header */
+  @media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-
-    /* Footer styles */
-    .footer {
-        position: fixed; /* Fix the footer position */
-        bottom: 0; /* Position the footer at the bottom */
-        width: 100%; /* Ensure full width */
-        z-index: 2; /* Ensure the footer is above the video */
-        transition: bottom 0.3s; /* Add smooth transition for the footer */
+    
+    body {
+        font-family: Arial, sans-serif;
+        background: url('your_background_image.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        position: relative; /* Make the body relative for positioning the footer */
+        overflow: hidden; /* Hide overflow to prevent scrolling beyond the viewport */
     }
-
-    /* Show header on scroll */
-    .show-header .header {
-        top: -100px; /* Move header out of view */
-    }
-
-    /* Show footer on scroll */
-    .show-footer .footer {
-        bottom: -100px; /* Move footer out of view */
-    }
-
-    /* Video container styles */
+    
     .video-container {
-        margin-top: 60px; /* Adjust to push content below the header */
-        margin-bottom: 60px; /* Adjust to push content above the footer */
-        z-index: 1; /* Ensure the video is below the header and above the footer */
-        overflow-y: auto; /* Enable vertical scrolling for the video container */
-        position: relative; /* Ensure the container is positioned relatively */
-        height: calc(100vh - 120px); /* Calculate height to fit between header and footer */
+        position: absolute; /* Change position to absolute */
+        top: 50%; /* Position video at the vertical center */
+        left: 0;
+        right: 0;
+        transform: translateY(-50%); /* Center the video vertically */
+        z-index: 1;
     }
-
+    
     .video-container video {
-        width: 100%; /* Ensure full width */
-        height: auto; /* Allow the height to adjust automatically */
-        border: 1px solid #ccc; /* Add border to the video */
-        border-radius: 5px; /* Add border radius for a rounded appearance */
+        width: 100%; /* Set width to 100% of the container */
+        height: auto; /* Maintain aspect ratio */
     }
-
-    /* Additional inverted styles */
-    .hover-4,
-    .inverted-2,
-    .inverted-3,
-    .inverted-4,
-    .inverted-5,
-    .inverted-6,
-    .inverted-7,
-    .inverted-8,
-    .d-1 {
-        top: 50%; /* Adjust top position for smaller screens */
-        right: 10%; /* Adjust right position for smaller screens */
-        transform: translate(-50%, -50%) rotate(30deg); /* Adjust transform for smaller screens */
-        font-size: small; /* Make the font size smaller */
-        overflow: hidden; /* Hide overflowing text */
+    
+    .header {
+        background-color: rgba(0, 0, 0, 0.5); /* Change to semi-transparent black */
+        position: relative;
+        z-index: 2;
     }
-
-    /* Responsive styles for text */
-    .company-description {
-        font-size: 16px; /* Reduce font size for smaller screens */
-        text-align: center; /* Center align the company description */
-        font-family: 'KG First Time In Forever', sans-serif;
-        max-width: 100%; /* Adjust width for smaller screens */
+    
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        z-index: 2; /* Ensure it's above other content */
+        padding: 10px 0; /* Reduce padding for smaller screens */
+        line-height: 1.6;
     }
-
-    .company-description .highlight {
-        font-family: 'Lumie', sans-serif;
-        font-size: 30px; /* Decrease font size for "The One" on smaller screens */
-    }
-
-    /* Responsive styles for footer */
+    
     .footer .container {
-        padding: 8px; /* Reduce padding for smaller screens */
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Center align text */
     }
-
+    
+    .button-container {
+        margin-bottom: 10px; /* Add some space between buttons and copyright */
+    }
+    
     .button {
-        padding: 6px 10px; /* Reduce button padding for smaller screens */
-        font-size: 12px; /* Reduce font size for smaller screens */
+        display: inline-block;
+        background-color: transparent;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
-
-    .copyright {
-        font-size: 10px; /* Reduce font size for smaller screens */
+    
+    .button:hover {
+        background-color: rgba(204, 0, 79, 0.8); /* Change hover color to the same as font */
+        color: #0a0a0a; /* White text color on hover */
+    }
+    
+    /*24 hour*/
+    .except {
+        font-family: 'KG First Time In Forever', sans-serif;
+        font-size: 40px;
+        color: #EEE0EC; /* Change text color to more colorful */
+        text-align: center; /* Move text to the center */
+        margin-left: auto; /* Move text to the right */
+        margin-right: 200px; /* Increase right margin for smaller screens */
+    }
+    
+    .except .highlight {
+        font-family: 'Lumie', sans-serif;
+        font-size: 48px; /* Increase font size for "The One" */
+        font-weight: bold; /* Make text bold */
+        color: rgba(204, 0, 79, 0.8); /* Change color to neon pink */
+        text-shadow: 
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 151px #bc13fe; /* Neon glow effect */
     }
 }
 
+@media (max-width: 480px) {
+    .company-description {
+        margin-right: 20px; /* Adjust right margin for smaller screens */
+    }
+
+    .except {
+        margin-right: 100px; /* Adjust right margin for smaller screens */
+    }
+}
